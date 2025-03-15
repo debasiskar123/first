@@ -15,6 +15,7 @@
 
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>   
 
 
     <!-- Additional CSS Files -->
@@ -24,11 +25,105 @@
     <link rel="stylesheet" href="assets/css/owl.css">
 <!--
 
+
 TemplateMo 565 Onix Digital
 
 https://templatemo.com/tm-565-onix-digital
 
 -->
+
+<style>
+  .our-team{
+    text-align: center;
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+    transition: all 0.3s ease 0s;
+}
+.our-team .pic{
+    background: #f6931e;
+    transition: all 0.3s ease 0s;
+}
+.our-team:hover .pic{
+    padding: 10px;
+    border-radius: 10px;
+    transform: scale(0.5) translateY(-30%);
+}
+.our-team .pic img{
+    width: 100%;
+    height: auto;
+}
+.our-team .team-content{
+    width: 100%;
+    padding: 7px 15px;
+    background: #f6931e;
+    position: absolute;
+    bottom: -30%;
+    right: 0;
+    opacity: 0;
+    transition: all 0.3s ease 0s;
+}
+.our-team:hover .team-content{
+    opacity: 1;
+    bottom: -10px;
+}
+.our-team .title{
+    font-size: 22px;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin: 0 0 5px 0;
+}
+.our-team .post{
+    display: block;
+    font-size: 15px;
+    font-weight: 600;
+    color: #fff;
+    font-style: italic;
+    text-transform: capitalize;
+    margin: 0 0 5px 0;
+}
+.our-team .social{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    transition: all 0.35s ease 0s;
+}
+.our-team .social li{
+    display: inline-block;
+    margin: 0 5px 0 0;
+}
+.our-team .social li a{
+    display: block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 15px 0 15px 0;
+    font-size: 20px;
+    color: #fff;
+    overflow: hidden;
+    z-index: 1;
+    position: relative;
+    transition: all 0.35s ease 0s;
+}
+.our-team .social li a:before{
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: #e06f06;
+    position: absolute;
+    top: 0;
+    left: -100%;
+    z-index: -1;
+    transition: all 0.3s ease-in-out 0s;
+}
+.our-team .social li a:hover:before{ left: 0; }
+@media only screen and (max-width: 990px){
+    .our-team{ margin-bottom: 30px; }
+}
+License Terms
+</style>
+
   </head>
 
 <body>
@@ -54,7 +149,7 @@ https://templatemo.com/tm-565-onix-digital
           <nav class="main-nav">
             <!-- ***** Logo Start ***** -->
             <a href="index.html" class="logo">
-              <img src="assets/images/logo.png">
+              <img src="assets/images/logoo.png">
             </a>
             <!-- ***** Logo End ***** -->
             <!-- ***** Menu Start ***** -->
@@ -62,8 +157,8 @@ https://templatemo.com/tm-565-onix-digital
               <li class="scroll-to-section"><a href="#top" class="active">Home</a></li>
               <li class="scroll-to-section"><a href="#services">Services</a></li>
               <li class="scroll-to-section"><a href="#about">About</a></li>
-              <li class="scroll-to-section"><a href="#portfolio">Portfolio</a></li>
-              <li class="scroll-to-section"><a href="#video">Videos</a></li> 
+              <li class="scroll-to-section"><a href="#portfolio">Team</a></li>
+              <!-- <li class="scroll-to-section"><a href="#video">Images</a></li>  -->
               <li class="scroll-to-section"><a href="#contact">Contact Us</a></li> 
               <li class="scroll-to-section"><div class="main-red-button-hover"><a href="#contact">Contact Us Now</a></div></li> 
             </ul>        
@@ -86,15 +181,15 @@ https://templatemo.com/tm-565-onix-digital
             <div class="col-lg-6 align-self-center">
               <div class="owl-carousel owl-banner">
                 <div class="item header-text">
-                  <h6>Welcome to Onix Digital</h6>
-                  <h2>Build <em>your website</em> the best in <span>SEO</span>?</h2>
-                  <p>This is a professional looking HTML Bootstrap 5 website template brought to you by TemplateMo website.</p>
+                  <h6>Welcome to SEO Link Hub</h6>
+                  <h2> Linking Dreams to Reality <em> SEOLinkHub, </em> Your Path to <span> Online Success</span></h2>
+                  <p>SEOLinkHub is your dedicated partner in the dynamic realm of digital success. Specializing in top-tier link building services, we meticulously craft strategic connections that propel your brand to new heights. Our hub is a nexus of innovation, where every link is designed to enhance your online presence with precision and impact. Elevate your visibility, authority, and digital influence – choose SEOLinkHub for a transformative journey into the forefront of online excellence.</p>
                   <div class="down-buttons">
                     <div class="main-blue-button-hover">
                       <a href="#contact">Message Us Now</a>
                     </div>
                     <div class="call-button">
-                      <a href="#"><i class="fa fa-phone"></i> 010-020-0340</a>
+                      <a href="#"><i class="fa fa-phone"></i>+91 8617873021</a>
                     </div>
                   </div>
                 </div>
@@ -143,7 +238,7 @@ https://templatemo.com/tm-565-onix-digital
       <div class="row">
         <div class="col-lg-6 offset-lg-3">
           <div class="section-heading">
-            <h2>We <em>Provide</em> The Best SEO Service With <span>Our Tools</span></h2>
+            <h2>What <em>Solutions</em> We <span>Provide</span></h2>
             <span>Our Services</span>
           </div>
         </div>
@@ -152,24 +247,24 @@ https://templatemo.com/tm-565-onix-digital
         <div class="col-lg-12">
           <div class="owl-carousel owl-services">
             <div class="item">
-              <h4>Best SEO</h4>
+              <h4>SEO Marvels</h4>
               <div class="icon"><img src="assets/images/service-icon-01.png" alt=""></div>
-              <p>Feel free to use this template for your business</p>
+              <p>Embark on a digital odyssey with SEOLinkHub's SEO service, a symphony of precision and innovation meticulously orchestrated by our team of seasoned virtuosos. In the ever-evolving realm of search engine optimization, we stand as architects of online prominence, crafting strategies that transcend conventional boundaries. Our meticulous approach transcends mere keyword optimization; it's a nuanced blend of art and analytics, sculpting digital landscapes to propel your brand into the echelons of search engine superiority. Led by a highly professional team, our service is not just a solution; it's an unwavering commitment to excellence. We navigate the intricacies of algorithms with a sophistication that mirrors the classics, ensuring that your online presence is not only noticed but revered. At SEOLinkHub, SEO isn't a service; it's a timeless masterpiece, meticulously composed to resonate with the symphony of the digital world. Welcome to a realm where every click is a note, and every search is a sonnet in the poetry of online success. </p>
             </div>
             <div class="item">
-              <h4>Develop The Best Strategy for Business</h4>
+              <h4>Link Building & Backlinks</h4>
               <div class="icon"><img src="assets/images/service-icon-02.png" alt=""></div>
-              <p>Get to know more about the topic in details</p>
+              <p>Embark on a digital expedition with SEOLinkHub, where we revolutionize the realm of online visibility through our Link Building & Backlinks service. Envision your website as a thriving nexus in the expansive digital landscape – that's precisely the masterpiece we craft for you. Our adept team, brimming with creativity and expertise, constructs pathways leading straight to your site, amplifying its credibility and authority. Beyond mere backlinks, we intricately engineer digital bridges that elevate your online presence. With our profoundly professional approach, we ensure your website not only ascends the search engine rankings but also captivates attention in the fiercely competitive digital sphere. At SEOLinkHub, simplicity, transparency, and tangible results are our guiding principles. Allow us to navigate the intricate world of link building, steering your brand to unprecedented heights with every click.</p>
             </div>
             <div class="item">
-              <h4>UI / UX Design and Development</h4>
+              <h4>Content Marketing</h4>
               <div class="icon"><img src="assets/images/service-icon-03.png" alt=""></div>
-              <p>Get to know more about the topic in details</p>
+              <p>Step into the world of digital prominence with our Link Content Marketing service at SEOLinkHub. Picture this – your brand gaining authority and visibility across the web effortlessly. Our dedicated team of experts works tirelessly to create strategic pathways, weaving compelling content that not only engages but elevates your online presence. We go beyond mere link-building; we craft narratives that resonate with your audience and seamlessly integrate with the digital landscape. From blog posts to website content, our goal is simple – to make your brand stand out in the vast digital expanse. With 24/7 support, fair pricing, and a team of highly professional individuals, we invite you to experience the transformative power of Link Content Marketing at SEOLinkHub. Your journey to digital success begins here.</p>
             </div>
             <div class="item">
-              <h4>Discover &amp; Explore our SEO Tips</h4>
+              <h4>Blogger Outreach</h4>
               <div class="icon"><img src="assets/images/service-icon-04.png" alt=""></div>
-              <p>Feel free to use this template for your business</p>
+              <p>Dive into the digital tapestry with our Link Blogger Outreach service at SEOLinkHub, where we craft connections that weave a vibrant online presence for your brand. Imagine your story seamlessly integrated into the narratives of influential bloggers in your niche, creating an authentic resonance with their engaged audience. Beyond the typical link-building approach, we embark on a journey of genuine partnerships that transcend the digital landscape. Our team, with a commitment to transparency, ensures your brand not only receives backlinks but also becomes an integral part of compelling narratives. Let SEOLinkHub be your passport to the expansive blogosphere, where we don't just drive traffic and build credibility – we cultivate an authentic digital presence that speaks volumes to your target audience. Choose us for a blogger outreach experience that transforms your brand's digital narrative with simplicity and sophistication.</p>
             </div>
             <div class="item">
               <h4>Optimizing your websites for Speed</h4>
@@ -227,8 +322,8 @@ https://templatemo.com/tm-565-onix-digital
         </div>
         <div class="col-lg-6">
           <div class="section-heading">
-            <h2>Grow your website with our <em>SEO Tools</em> &amp; <span>Project</span> Management</h2>
-            <p>You can browse free HTML templates on Too CSS website. Visit the website and explore latest website templates for your projects.</p>
+            <h2>Why Choose <em>SEO Link Hub</em> &amp; <span>Project</span> Management</h2>
+            <p>Elevate your website's visibility and ranking with our premium backlink solutions. As seasoned SEO providers, we specialize in delivering high-quality backlinks that enhance your site's authority and drive organic traffic. Our strategic approach ensures a diverse and relevant link profile, adhering to industry best practices. Let us boost your online presence and empower your website to climb search engine rankings. Choose us for effective, ethical, and results-driven SEO backlink services that make a lasting impact.</p>
             <div class="row">
               <div class="col-lg-4">
                 <div class="fact-item">
@@ -236,7 +331,7 @@ https://templatemo.com/tm-565-onix-digital
                     <div class="icon">
                       <img src="assets/images/service-icon-01.png" alt="">
                     </div>
-                    <div class="count-digit">320</div>
+                    <div class="count-digit">5000</div>
                     <div class="count-title">SEO Projects</div>
                     <p>Lorem ipsum dolor sitti amet, consectetur.</p>
                   </div>
@@ -428,6 +523,66 @@ https://templatemo.com/tm-565-onix-digital
       </div>
     </div>
   </div>
+
+
+  <!-- our team -->
+
+  <div class="container">
+    <div class="row">
+        <div class="col-md-4 col-sm-6">
+            <div class="our-team">
+                <div class="pic">
+                    <img src="./assets/images/abc.png">
+                </div>
+                <div class="team-content">
+                    <h3 class="title">Williamson</h3>
+                    <span class="post">Web Developer</span>
+                    <ul class="social">
+                        <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fab fa-google-plus"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 col-sm-6">
+            <div class="our-team">
+                <div class="pic">
+                    <img src="./assets/images/def.jpg">
+                </div>
+                <div class="team-content">
+                    <h3 class="title">Kristiana</h3>
+                    <span class="post">Web Designer</span>
+                    <ul class="social">
+                        <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fab fa-google-plus"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 col-sm-6">
+          <div class="our-team">
+              <div class="pic">
+                  <img src="./assets/images/xyz.jpg">
+              </div>
+              <div class="team-content">
+                  <h3 class="title">Kristiana</h3>
+                  <span class="post">Web Designer</span>
+                  <ul class="social">
+                      <li><a href="https://www.linkedin.com/in/debasish-kar-16ab741a7/" target="_blank"><i class="fab fa-facebook"></i></a></li>
+                      <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                      <li><a href="#"><i class="fab fa-google-plus"></i></a></li>
+                      <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                      <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                      <li><a href="#"><i class="fab fa-google-plus"></i></a></li>
+                  </ul>
+              </div>
+          </div>
+      </div>
+    </div>
+</div>
+
 
   <!-- <div id="pricing" class="pricing-tables">
     <div class="tables-left-dec">
@@ -635,11 +790,11 @@ https://templatemo.com/tm-565-onix-digital
           <div class="section-heading">
             <h2>Feel free to <em>Contact</em> us via the <span>HTML form</span></h2>
             <div id="map">
-              <iframe src="https://maps.google.com/maps?q=Av.+L%C3%BAcio+Costa,+Rio+de+Janeiro+-+RJ,+Brazil&t=&z=13&ie=UTF8&iwloc=&output=embed" width="100%" height="360px" frameborder="0" style="border:0" allowfullscreen=""></iframe>
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14657.644628011114!2d86.83743943913187!3d23.300836521418592!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f6544c856359a9%3A0xe22f16a07a398eed!2sKamalpur%2C%20West%20Bengal%20722137!5e0!3m2!1sen!2sin!4v1709134075398!5m2!1sen!2sin" width="100%" height="360px" frameborder="0" style="border:0" allowfullscreen=""></iframe>
             </div>
             <div class="info">
-              <span><i class="fa fa-phone"></i> <a href="#">010-020-0340<br>090-080-0760</a></span>
-              <span><i class="fa fa-envelope"></i> <a href="#">info@company.com<br>mail@company.com</a></span>
+              <span><i class="fa fa-phone"></i> <a href="#">+91 8617873021<br>090-080-0760</a></span>
+              <span><i class="fa fa-envelope"></i> <a href="#">info.seolinkhub@gmail.com<br>mail@company.com</a></span>
             </div>
           </div>
         </div>
@@ -694,9 +849,9 @@ https://templatemo.com/tm-565-onix-digital
         <div class="col-lg-3">
           <div class="about footer-item">
             <div class="logo">
-              <a href="#"><img src="assets/images/logo.png" alt="Onix Digital TemplateMo"></a>
+              <a href="#"><img src="assets/images/Logo2.png" alt="Onix Digital TemplateMo"></a>
             </div>
-            <a href="#">info@company.com</a>
+            <a href="#">info.seolinkhub@gmail.com</a>
             <ul>
               <li><a href="#"><i class="fa fa-facebook"></i></a></li>
               <li><a href="#"><i class="fa fa-twitter"></i></a></li>
