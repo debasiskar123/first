@@ -189,14 +189,15 @@ body {
 
 .section-heading h2 em {
   font-style: normal;
-  color: #03a4ed;
+  color: #0703ed;
 }
 
 .section-heading h2 span {
-  color: #ff695f;
+  color: #5fff7a;
   font-weight: 700;
   opacity: 1;
   text-transform: capitalize;
+  opacity: 0.50;
 }
 
 .section-heading span {
@@ -204,7 +205,7 @@ body {
   text-transform: uppercase;
   font-weight: 700;
   color: #ff695f;
-  opacity: 0.15;
+  opacity: 0.10;
 }
 
 .main-blue-button a {
